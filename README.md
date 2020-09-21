@@ -16,3 +16,8 @@ This README file is written by Limeng Pu.
 4. Pandas 1.0 or higher
 5. Networkx 2.4 or higher
 
+For the installation instruction please refer to the corresponding project site.
+
+# Usage
+
+The package provides data processing, prediction, and training modules if you'd like to train on your own dataset. 
