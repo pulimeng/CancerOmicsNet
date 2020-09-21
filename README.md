@@ -15,6 +15,7 @@ This README file is written by Limeng Pu.
 3. PyTorch Geometric latest version (https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html)
 4. Pandas 1.0 or higher
 5. Networkx 2.4 or higher
+6. CUDA if you'd like to run on GPU(s)
 
 For the installation instruction please refer to the corresponding project site.
 
