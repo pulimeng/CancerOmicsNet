@@ -77,3 +77,5 @@ The details of the data preprocessing for GraphGR is presented as follows.
 3. Networkx 2.4 or higher
 
 # Usage
+
+`python graphgr_reduction.py --input your-node-table.csv`
