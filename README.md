@@ -39,7 +39,7 @@ The input data required for the model comes in the form of graphs, which consist
 
     Reduce the original graph representation to a more feature rich form for better learning performance.
 
-    input --> node table (.csv), graph (.gexf), node clustering information (.csv, optional, provided)
+    input --> node table (.csv), graph (.gexf), additional reduction rules
 
     output --> reduced node table (.csv), reduced edge table (.csv), reduced graph (.gexf), reduction records (.csv)
 
