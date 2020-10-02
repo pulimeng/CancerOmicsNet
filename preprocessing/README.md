@@ -75,6 +75,7 @@ The details of the data preprocessing for GraphGR is presented as follows.
 3. Graph to matrix conversion
 
     Input: `reduced_network.gexf`, `reduced_node_table.csv`.
+    
     Output: `reduced_data.h5` contains node features matrix (N x d), adjacency matrix (N x N), edge indices (2 x E), label (if training data).
     
 
