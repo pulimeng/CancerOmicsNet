@@ -33,23 +33,23 @@ The input data required for the model comes in the form of graphs, which consist
 
     input --> node table (.csv) Note that we use the ensemble id as the node id.
     
-    output --> graph (.gexf, can be read in Networkx)
+    output --> graph (.gexf, can be read in Networkx).
 
 2. Graph reduction:
 
     Reduce the original graph representation to a more feature rich form for better learning performance.
 
-    input --> node table (.csv), graph (.gexf), additional reduction rules
+    input --> node table (.csv), graph (.gexf), additional reduction rules.
 
-    output --> reduced node table (.csv), reduced edge table (.csv), reduced graph (.gexf), reduction records (.csv)
+    output --> reduced node table (.csv), reduced edge table (.csv), reduced graph (.gexf), reduction records (.csv).
 
 3. Graph to matrix conversion
 
     Convert the graph to matrix reprsentation as the final input to the model.
 
-    input --> reduced node table (.csv), reduced graph (.gexf)
+    input --> reduced node table (.csv), reduced graph (.gexf).
 
-    output --> matrices (.h5) including node features matrix (N x d), adjacency matrix (N x N), edge indices (2 x E)
+    output --> matrices (.h5) including node features matrix (N x d), adjacency matrix (N x N), edge indices (2 x E).
 
 # Prediction
 
