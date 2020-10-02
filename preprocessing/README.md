@@ -42,10 +42,11 @@ The details of the data preprocessing for GraphGR is presented as follows.
     
     In this work, we employed three reduction rules that address the **protein "kinaseness"** since we focus our work on kinase inhibitors, **gene expressions**, and **gene ontology (biological process) similarity** between proteins. Based on such rules, the reduction is carried out by ontracting edges (merging nodes), where two nodes (proteins) belong to the **biological process group** AND have the **same gene expression** AND **neither of them are kinases**. Note that the **biological process group** is precomputed using _GOGO Score_ (https://github.com/zwang-bioinformatics/GOGO) and _Agglomerative Clustering_ (https://scikit-learn.org/stable/modules/generated/sklearn.cluster.AgglomerativeClustering.html).
     
-    - `./data/master_edge_table.csv` -- The preprocessed yet UNREDUCED edge table from STRING as described above. NOTE that this is not the original string. Only interactions with score above 500 is retained and some isolated proteins are removed.
-    - `./data/master_node_table.csv` -- The original (unreduced) node table with the format as aforementioned. Contains many features.
-    - `./data/bpo_groups.csv` -- Pathway information of all the proteins in the processed STIRING. "unknown" is used for the missing values.
-    - `./data/kinases.pkl` -- A list of all kinases.
+    Following files are required for the reduction procedure:    
+    - `./data/master_edge_table.csv` -- ORIGINAL STRING PPI network. Preprocessed as aforementioned yet UNREDUCED. Provided.
+    - `./data/master_node_table.csv` -- The ORIGINAL node table with the format as aforementioned. Contains many features.
+    - `./data/bpo_groups.csv` -- Biological process groups for each protein in the graph.
+    - `./data/kinases.lst` -- A list of kinases in the graph.
     
     The reduction procedure performed in this example can be summarized as following steps.
     
