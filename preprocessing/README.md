@@ -2,7 +2,7 @@
 
 The details of the data preprocessing for GraphGR is presented as follows.
 
-1. Network representation
+1. Graph generation
 
     The network is represented as a node table and an edge table. The node table takes the following format:
     
@@ -28,7 +28,7 @@ The details of the data preprocessing for GraphGR is presented as follows.
     
     These two tables are often enough to represent the PPI network.
     
-2. Network reduction
+2. Graph reduction
 
     The network reduction heavily relies on the applications/purpose of the study since it is related to the nature of the network. In this example, we presented a simple case. We reduce the network by contracting edges (merging nodes), whose two nodes (proteins) belong to the <strong>same pathway</strong> AND have the <strong>same gene expression</strong> AND <strong>neither of them are kinases</strong>. In order to do that, we loaded the following data:
     
