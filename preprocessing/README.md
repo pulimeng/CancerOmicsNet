@@ -60,7 +60,7 @@ The details of the data preprocessing for GraphGR is presented as follows.
     A flowchart of the procedure is presented in the figure below.
     
     <p align="center">
-        <img width="460" height="460" src="./image/reduction_flow.png">
+        <img src="./image/reduction_flow.png">
     </p>
 
     The outputs:
