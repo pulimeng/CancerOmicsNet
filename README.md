@@ -25,7 +25,7 @@ This repo provides data processing, prediction, and training modules if you'd li
 
 # Data Preprocessing
 
-The input data required for the model comes in the form of graphs, which consists of a list of nodes and a list of edges (edge features are not supported in the currently implementation), which is provided in this repo based on the STRING databse (https://string-db.org/). The processing steps include: graph generation with node feaures, graph reduction, and graph to matrix conversion. The detailed information can be found in `./reduction`.
+The input data required for the model comes in the form of graphs, which consists of a list of nodes and a list of edges (edge features are not supported in the currently implementation), which is provided in this repo based on the STRING databse (https://string-db.org/). The processing steps include: graph generation with node feaures, graph reduction, and graph to matrix conversion. The detailed information can be found in `./preprocessing`.
 
 1. Graph generation: 
 
