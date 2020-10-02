@@ -18,10 +18,10 @@ The details of the data preprocessing for GraphGR is presented as follows.
     The sample edge table is shown as follow:
     
     |   node1_id   |   node2_id   |   feature_1   |
-    |:---:|:---:|:---:|:---:|
+    |:---:|:---:|:---:|
     | ENSEMBLID_1 | ENSEMBLID_2 | conf_1_12 |
     | ENSEMBLID_1 | ENSEMBLID_3 | conf_1_13 |
-    | ... | ... | ... | ... | ... | ... |
+    | ... | ... | ... |
     | ENSEMBLID_n | ENSEMBLID_k | conf_1_nk |
 
     The edge table is the connections provided by the STRING database. It often require some preprocess (connected component) based on particular applications.
