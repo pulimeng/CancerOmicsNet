@@ -38,16 +38,11 @@ The details of the data preprocessing for GraphGR is presented as follows.
     
 2. Graph reduction
 
-    The graph reduction promotes topological diversity ,feature richness for each graph and lessens the computational cost in the learning stage. Without the reduction, the graph topology is the same for all graphs while the only difference lies in the node features. The reduction procedure relies heavily on the applications of the study since the reduction rules can vary drastically for different applications. In this work, we employed three reduction rules that address the **protein "kinaseness"** since we focus our work on kinase inhibitors, **gene expressions**, and **gene ontology similarity** between proteins.
-    
-    
-    
-    
-    . We reduce the network by contracting edges (merging nodes), whose two nodes (proteins) belong to the <strong>same pathway</strong> AND have the <strong>same gene expression</strong> AND <strong>neither of them are kinases</strong>. In order to do that, we loaded the following data:
+    The graph reduction promotes topological diversity ,feature richness for each graph and lessens the computational cost in the learning stage. Without the reduction, the graph topology is the same for all graphs while the only difference lies in the node features. The reduction procedure relies heavily on the applications of the study since the reduction rules can vary drastically for different applications. In this work, we employed three reduction rules that address the **protein "kinaseness"** since we focus our work on kinase inhibitors, **gene expressions**, and **gene ontology (biological process) similarity** between proteins. Based on such rules, the reduction is carried out by ontracting edges (merging nodes), where two nodes (proteins) belong to the **biological process group** AND have the **same gene expression** AND **neither of them are kinases**. Note that the **biological process group** is precomputed using GOGO score (https://github.com/zwang-bioinformatics/GOGO) and Agglomerative Clustering (https://scikit-learn.org/stable/modules/generated/sklearn.cluster.AgglomerativeClustering.html).
     
     - `./data/master_edge_table.csv` -- The preprocessed yet UNREDUCED edge table from STRING as described above. NOTE that this is not the original string. Only interactions with score above 500 is retained and some isolated proteins are removed.
     - `./data/master_node_table.csv` -- The original (unreduced) node table with the format as aforementioned. Contains many features.
-    - `./data/pathway_info.csv` -- Pathway information of all the proteins in the processed STIRING. "unknown" is used for the missing values.
+    - `./data/bpo_groups.csv` -- Pathway information of all the proteins in the processed STIRING. "unknown" is used for the missing values.
     - `./data/kinases.pkl` -- A list of all kinases.
     
     The reduction procedure performed in this example can be summarized as following steps.
