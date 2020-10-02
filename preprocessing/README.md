@@ -30,9 +30,9 @@ The details of the data preprocessing for GraphGR is presented as follows.
     - Average node degree: 72.
     - Density: 0.40%.
     
-    The graph generation process will integrate the node table and the edge table to form a graph, which is represented by a `.gexf` file. The file can be read by `Gephi` for visualization purposes and `Networkx` for calculation purposes. An example of the subgraph of the original graph in shown below.
+    The graph generation process will integrate the node table and the edge table to form a graph, which is represented by a `.gexf` file. The file can be read by `Gephi` for visualization purposes and `Networkx` for calculation purposes. An example of the subgraph of the original graph in shown below with red node -> kinase, green node -> non-kinase.
     
-    <img src="./image/original_subgraph.png" width="400" height="400">
+    <img src="./image/original_subgraph.png" width="400" height="400" pos="center">
     
 2. Graph reduction
 
