@@ -1,4 +1,4 @@
-# Protein-Protein Interaction Network Reduction
+# Data Preprocessing for GraphGR
 
 This is an example of network reduction for PPI network.
 
