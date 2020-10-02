@@ -40,7 +40,7 @@ The details of the data preprocessing for GraphGR is presented as follows.
 
     The graph reduction promotes topological diversity ,feature richness for each graph and lessens the computational cost in the learning stage. Without the reduction, the graph topology is the same for all graphs while the only difference lies in the node features. The reduction procedure relies heavily on the applications of the study since the reduction rules can vary drastically for different applications.
     
-    In this work, we employed three reduction rules that address the **protein "kinaseness"** since we focus our work on kinase inhibitors, **gene expressions**, and **gene ontology (biological process) similarity** between proteins. Based on such rules, the reduction is carried out by ontracting edges (merging nodes), where two nodes (proteins) belong to the **biological process group** AND have the **same gene expression** AND **neither of them are kinases**. Note that the **biological process group** is precomputed using _GOGO Score_ (https://github.com/zwang-bioinformatics/GOGO) and _Agglomerative Clustering_ (https://scikit-learn.org/stable/modules/generated/sklearn.cluster.AgglomerativeClustering.html).
+    In this work, we employed three reduction rules that address the **protein "kinaseness"** since we focus our work on kinase inhibitors, **gene expressions**, and **gene ontology (biological process) similarity** between proteins. Based on such rules, the reduction is carried out by contracting edges (merging nodes), whose ending nodes (proteins) belong to the same **biological process group** AND have the same **gene expression** AND **neither of them are kinases**. Note that the **biological process group** is precomputed using _GOGO Score_ (https://github.com/zwang-bioinformatics/GOGO) and _Agglomerative Clustering_ (https://scikit-learn.org/stable/modules/generated/sklearn.cluster.AgglomerativeClustering.html).
     
     Following files are required for the reduction procedure:    
     - `master_edge_table.csv` -- ORIGINAL STRING PPI network. Preprocessed as aforementioned yet UNREDUCED. Provided.
@@ -50,7 +50,7 @@ The details of the data preprocessing for GraphGR is presented as follows.
     
     The reduction procedure performed in this example can be summarized as following steps.
     
-    - Find UNCONTRACTABLE edges.
+    - Find UNCONTRACTABLE edges according to the aforementioned rules.
     - Remove UNCONTRACABLE edges on a copy of the original network.
     - Find all connected components C = {c_1, c_2, ... , c_l} with more than two nodes in G'. This can be done easily using networkx.
     - Replace all nodes in each connected component with one virtual node v_i, where i = 1,2,3,...,l. Note that some of the node features should be replaced with median/max/mean of the original nodes associated with corresponding virtual node. This should be done in both node table and edge table.
