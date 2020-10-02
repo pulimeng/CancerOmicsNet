@@ -13,7 +13,7 @@ The details of the data preprocessing for GraphGR is presented as follows.
     | ... | ... | ... | ... | ... | ... |
     | ENSEMBLID_n | xn_1 | xn_2 | ... | xn_m |
 
-    The node table is the table collected by the user. It contains any features you wish to use for your purpose. However, the node presented in the node table must also be presented in the edge table. Otherwise, the network will have an isolated node, which won't propagate any information in terms for the graph feature extraction.
+    Note that we use ensemble id as the node id for proteins. The node table is the table collected by the user. It contains any features you wish to use for your purpose. However, the node presented in the node table must also be presented in the edge table. Otherwise, the network will have an isolated node, which won't propagate any information in terms for the graph feature extraction.
 
     An example of the edge table is shown as follow:
     
