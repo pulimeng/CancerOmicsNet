@@ -29,7 +29,7 @@ The input data required for the model comes in the form of graphs, which consist
 
 1. Graph generation: input --> node table
 
-|   node_id   |   feature_1   |   feature_2   |   ...   |   feature_m   |
+    |   node_id   |   feature_1   |   feature_2   |   ...   |   feature_m   |
     |:---:|:---:|:---:|:---:|:---:|
     | ENSEMBLID_1 | x1_1 | x1_2 | ... | x1_m |
     | ENSEMBLID_2 | x2_1 | x2_2 | ... | x2_m |
