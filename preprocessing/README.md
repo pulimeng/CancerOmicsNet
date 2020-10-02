@@ -13,16 +13,16 @@ The details of the data preprocessing for GraphGR is presented as follows.
     | ... | ... | ... | ... | ... | ... |
     | ENSEMBLID_n | xn_1 | xn_2 | ... | xn_m |
 
-    Note that we use ensemble id as the node id for proteins. The node table is the table collected by the user. It contains any features you wish to use for your purpose. However, the node presented in the node table must also be presented in the edge table. Otherwise, the network will have an isolated node, which won't propagate any information in terms for the graph feature extraction.
+    Note that we use the ensemble id as the node id for proteins. The node table is the table provided by the user. It contains any features you wish to use for your purpose. However, the node presented in the node table must also be presented in the edge table, which is provided in this repo. Otherwise, the network will have an isolated node, where no information propagation occurs regarding such nodes. This makes such nodes useless in the learning process since there is no information exchange with any other nodes.
 
-    An example of the edge table is shown as follow:
+    The sample edge table is shown as follow:
     
-    |   node1_id   |   node2_id   |   feature_1   |   feature_2   |   ...   |   feature_i   |
-    |:---:|:---:|:---:|:---:|:---:|:---:|
-    | ENSEMBLID_1 | ENSEMBLID_2 | x1_12 | x2_12 | ... | xi_12 |
-    | ENSEMBLID_1 | ENSEMBLID_3 | x1_13 | x2_13 | ... | xi_13 |
+    |   node1_id   |   node2_id   |   feature_1   |
+    |:---:|:---:|:---:|:---:|
+    | ENSEMBLID_1 | ENSEMBLID_2 | conf_1_12 |
+    | ENSEMBLID_1 | ENSEMBLID_3 | conf_1_13 |
     | ... | ... | ... | ... | ... | ... |
-    | ENSEMBLID_n | ENSEMBLID_k | x1_nk | x2_nk | ... | xi_nk |
+    | ENSEMBLID_n | ENSEMBLID_k | conf_1_nk |
 
     The edge table is the connections provided by the STRING database. It often require some preprocess (connected component) based on particular applications.
     
