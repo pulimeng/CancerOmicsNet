@@ -29,34 +29,34 @@ The input data required for the model comes in the form of graphs, which consist
 
 1. Graph generation: 
 
-Generate a graph representation of the input data based on the node table provided by the user and the edge table provided in the repo. The resulting graph representation will be used for the graph reduction in the next step.
+    Generate a graph representation of the input data based on the node table provided by the user and the edge table provided in the repo. The resulting graph representation will be used for the graph reduction in the next step.
 
-input --> node table (.csv)
+    input --> node table (.csv)
 
-|   node_id   |   feature_1   |   feature_2   |   ...   |   feature_m   |
-|:---:|:---:|:---:|:---:|:---:|
-| ENSEMBLID_1 | x1_1 | x1_2 | ... | x1_m |
-| ENSEMBLID_2 | x2_1 | x2_2 | ... | x2_m |
-| ... | ... | ... | ... | ... | ... |
-| ENSEMBLID_n | xn_1 | xn_2 | ... | xn_m |
-    
-Note that we use the ensemble id as the node id.
-output --> graph (.gexf, can be read in Networkx)
+    |   node_id   |   feature_1   |   feature_2   |   ...   |   feature_m   |
+    |:---:|:---:|:---:|:---:|:---:|
+    | ENSEMBLID_1 | x1_1 | x1_2 | ... | x1_m |
+    | ENSEMBLID_2 | x2_1 | x2_2 | ... | x2_m |
+    | ... | ... | ... | ... | ... | ... |
+    | ENSEMBLID_n | xn_1 | xn_2 | ... | xn_m |
+
+    Note that we use the ensemble id as the node id.
+    output --> graph (.gexf, can be read in Networkx)
 
 2. Graph reduction:
 
-Reduce the original graph representation to a more feature rich form for better learning performance.The detailed information can be found in `./reduction`
+    Reduce the original graph representation to a more feature rich form for better learning performance.The detailed information can be found in `./reduction`
 
-input --> node table (.csv), graph (.gexf), node clustering information (.csv, optional, provided)
+    input --> node table (.csv), graph (.gexf), node clustering information (.csv, optional, provided)
 
-output --> reduced node table (.csv), reduced edge table (.csv), reduced graph (.gexf), reduction records (.csv)
+    output --> reduced node table (.csv), reduced edge table (.csv), reduced graph (.gexf), reduction records (.csv)
 
 3. Graph to matrix conversion
 
-Convert the graph to matrix reprsentation as the final input to the model.
+    Convert the graph to matrix reprsentation as the final input to the model.
 
-input --> reduced node table (.csv), reduced graph (.gexf)
+    input --> reduced node table (.csv), reduced graph (.gexf)
 
-output --> matrices (.h5) including node features matrix (N x d), adjacency matrix (N x N), edge indices (2 x E)
+    output --> matrices (.h5) including node features matrix (N x d), adjacency matrix (N x N), edge indices (2 x E)
 
 
