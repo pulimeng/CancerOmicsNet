@@ -24,14 +24,11 @@ The details of the data preprocessing for GraphGR is presented as follows.
     | ... | ... | ... |
     | ENSEMBLID_n | ENSEMBLID_k | conf_1_nk |
 
-    The edge table is generated from the STRING database (https://string-db.org/). The edge table is preprocess by removing edges with confidence score below 500 and removing any isolated nodes after the thresholding. The final stats are
+    The edge table is generated from the STRING database (https://string-db.org/). Version 11 is currently in use. It is established by literature mining. Each interaction has a score, which is the confidence score derived by the authors. The higher the score, more likely the interaction exists in reality.The edge table is preprocessed by removing edges with confidence score below 500 and removing any isolated nodes after the thresholding. The final stats for the graph are,
     - Number of nodes (proteins): 19,144.
     - Number of edges (interactions): 685,198.
     - Average node degree: 72.
     - Density: 0.40%.
-    
-    
-    These two tables are often enough to represent the PPI network.
     
 2. Graph reduction
 
