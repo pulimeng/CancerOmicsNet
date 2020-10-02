@@ -73,7 +73,9 @@ The details of the data preprocessing for GraphGR is presented as follows.
     - `reduction_records.csv` -- A record to keep track of every node's final destination in the reduction procedure.
     
 3. Graph to matrix conversion
-
+    
+    Convert reduced graph and all its information to matrics for further analysis and learning procedures.
+    
     Input: `reduced_network.gexf`, `reduced_node_table.csv`.
     
     Output: `reduced_data.h5` contains node features matrix (N x d), adjacency matrix (N x N), edge indices (2 x E), label (if training data).
