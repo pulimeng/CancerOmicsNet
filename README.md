@@ -25,27 +25,19 @@ This repo provides data processing, prediction, and training modules if you'd li
 
 # Data Preprocessing
 
-The input data required for the model comes in the form of graphs, which consists of a list of nodes and a list of edges (edge features are not supported in the currently implementation), which is provided in this repo based on the STRING databse (https://string-db.org/). The processing steps include: graph generation with node feaures, graph reduction, and graph to matrix conversion. 
+The input data required for the model comes in the form of graphs, which consists of a list of nodes and a list of edges (edge features are not supported in the currently implementation), which is provided in this repo based on the STRING databse (https://string-db.org/). The processing steps include: graph generation with node feaures, graph reduction, and graph to matrix conversion. The detailed information can be found in `./reduction`.
 
 1. Graph generation: 
 
     Generate a graph representation of the input data based on the node table provided by the user and the edge table provided in the repo. The resulting graph representation will be used for the graph reduction in the next step.
 
-    input --> node table (.csv)
-
-    |   node_id   |   feature_1   |   feature_2   |   ...   |   feature_m   |
-    |:---:|:---:|:---:|:---:|:---:|
-    | ENSEMBLID_1 | x1_1 | x1_2 | ... | x1_m |
-    | ENSEMBLID_2 | x2_1 | x2_2 | ... | x2_m |
-    | ... | ... | ... | ... | ... | ... |
-    | ENSEMBLID_n | xn_1 | xn_2 | ... | xn_m |
-
-    Note that we use the ensemble id as the node id.
+    input --> node table (.csv) Note that we use the ensemble id as the node id.
+    
     output --> graph (.gexf, can be read in Networkx)
 
 2. Graph reduction:
 
-    Reduce the original graph representation to a more feature rich form for better learning performance.The detailed information can be found in `./reduction`
+    Reduce the original graph representation to a more feature rich form for better learning performance.
 
     input --> node table (.csv), graph (.gexf), node clustering information (.csv, optional, provided)
 
