@@ -1,6 +1,6 @@
 # Data Preprocessing for GraphGR
 
-This is an example of network reduction for PPI network.
+The details of the data preprocessing for GraphGR is presented as follows.
 
 1. Network representation
 
