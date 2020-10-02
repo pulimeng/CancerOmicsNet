@@ -30,6 +30,8 @@ The details of the data preprocessing for GraphGR is presented as follows.
     - Average node degree: 72.
     - Density: 0.40%.
     
+    The graph generation process will integrate the node table and the edge table to form a graph, which is represented by a `.gexf` file. The file can be read by Gephi for visualization purposes and Networkx for calculation purposes.
+    
 2. Graph reduction
 
     The network reduction heavily relies on the applications/purpose of the study since it is related to the nature of the network. In this example, we presented a simple case. We reduce the network by contracting edges (merging nodes), whose two nodes (proteins) belong to the <strong>same pathway</strong> AND have the <strong>same gene expression</strong> AND <strong>neither of them are kinases</strong>. In order to do that, we loaded the following data:
