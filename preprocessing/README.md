@@ -67,3 +67,7 @@ The details of the data preprocessing for GraphGR is presented as follows.
     - `reduced_node_table.csv` -- One extra feature will be produced to represent the reduction procedure. The kinase nodes will have a value of 2 while the virtual nodes will have a value of 0. And the non-kinase unreduced nodes will have a value of 1.
     - `reduced_edge_table.csv` -- Same format as the original edge table.
     - `reduction_records.csv` -- A record to keep track of every node's final destination in the reduction procedure.
+
+# Prerequisites
+
+# Usage
