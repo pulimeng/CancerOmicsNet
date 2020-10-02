@@ -27,7 +27,8 @@ This repo provides data processing, prediction, and training modules if you'd li
 
 The input data required for the model comes in the form of graphs, which consists of a list of nodes and a list of edges (edge features are not supported in the currently implementation), which is provided in this repo based on the STRING databse (https://string-db.org/). The processing steps include: graph generation with node feaures, graph reduction, and graph to matrix conversion. 
 
-1. Graph generation: input --> node table
+1. Graph generation: 
+input --> node table
 
     |   node_id   |   feature_1   |   feature_2   |   ...   |   feature_m   |
     |:---:|:---:|:---:|:---:|:---:|
@@ -37,5 +38,4 @@ The input data required for the model comes in the form of graphs, which consist
     | ENSEMBLID_n | xn_1 | xn_2 | ... | xn_m |
     
 Note that we use the ensemble id as the node id.
-
 output --> Networkx.Graph
