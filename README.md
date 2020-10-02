@@ -52,3 +52,11 @@ input --> node table (.csv), graph (.gexf), node clustering information (.csv, o
 output --> reduced node table (.csv), reduced edge table (.csv), reduced graph (.gexf), reduction records (.csv)
 
 3. Graph to matrix conversion
+
+Convert the graph to matrix reprsentation as the final input to the model.
+
+input --> reduced node table (.csv), reduced graph (.gexf)
+
+output --> matrices (.h5) including node features matrix (N x d), adjacency matrix (N x N), edge indices (2 x E)
+
+
