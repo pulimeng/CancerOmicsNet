@@ -13,7 +13,9 @@ The details of the data preprocessing for GraphGR is presented as follows.
     | ... | ... | ... | ... | ... | ... |
     | ENSEMBLID_n | xn_1 | xn_2 | ... | xn_m |
 
-    Note that we use the ensemble id as the node id for proteins. And please make sure to use some values to fill the missing values. An example of the node table is provided `example_node_table.csv`. The node table is the table provided by the user. It contains any features you wish to use for your purpose. For example, in our study, the features contain binding affinity of the drug, gene expression, and disease association score. It is very important that node presented in the node table must be contained in the edge table, which is provided by us in this repo. Otherwise, the network will have an isolated node, where no information propagation occurs regarding such nodes. This makes such nodes useless in the learning process since there is no information exchange with any other nodes.
+    Note that we use the ensemble id as the node id for proteins. And please make sure to use some values to fill the missing values. An example of the node table is provided `example_node_table.csv`.
+    
+    The node table is the input table provided by the user. It contains any features you wish to use for your purpose. For example, in our study, the features contain binding affinity of the drug, gene expression, and disease association score. It is very important that node presented in the node table must be contained in the edge table, which is provided by us in this repo. Otherwise, the network will have an isolated node, where no information propagation occurs regarding such nodes. This makes such nodes useless in the learning process since there is no information exchange with any other nodes.
 
     The sample edge table is shown as follow:
     
