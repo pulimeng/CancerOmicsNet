@@ -58,10 +58,12 @@ The details of the data preprocessing for GraphGR is presented as follows.
     - Generate new graph from the reduced edge table. 
     
     A flowchart of the procedure is presented in the figure below.
-       
-    <img src="./image/reduction_flow.png">
     
-    The script will produce four outputs:
+    <p align="center">
+        <img width="460" height="460" src="./image/reduction_flow.png">
+    </p>
+
+    The outputs:
     
     - `reduced_network.gexf` -- A graph representation of the network. Contains all the features (both nodes' and edges').
     - `reduced_node_table.csv` -- One extra feature will be produced to represent the reduction procedure. The kinase nodes will have a value of 2 while the virtual nodes will have a value of 0. And the non-kinase unreduced nodes will have a value of 1.
