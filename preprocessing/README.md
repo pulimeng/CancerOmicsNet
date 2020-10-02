@@ -32,7 +32,9 @@ The details of the data preprocessing for GraphGR is presented as follows.
     
     The graph generation process will integrate the node table and the edge table to form a graph, which is represented by a `.gexf` file. The file can be read by `Gephi` for visualization purposes and `Networkx` for calculation purposes. An example of the subgraph of the original graph in shown below with red node -> kinase, green node -> non-kinase.
     
-    <img align="center" width="500" height="500" src="./image/original_subgraph.png" >
+    <p align="center">
+        <img width="460" height="460" src="./image/original_subgraph.png">
+    </p>
     
 2. Graph reduction
 
