@@ -52,7 +52,7 @@ The details of the data preprocessing for GraphGR is presented as follows.
     
     A flowchart of the procedure is presented in the figure below.
     
-    ![eg_image](https://github.com/pulimeng/GraphGR/tree/master/preprocessing/image/reduction_flow.png)
+    ![eg_image1](https://github.com/pulimeng/GraphGR/tree/master/preprocessing/image/reduction_flow.png)
     
     The script will produce four outputs:
     
