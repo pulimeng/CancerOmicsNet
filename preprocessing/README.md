@@ -69,6 +69,7 @@ The details of the data preprocessing for GraphGR is presented as follows.
     - `reduction_records.csv` -- A record to keep track of every node's final destination in the reduction procedure.
 
 # Prerequisites
+
 1. Python 3.7.*
 2. Pandas 1.0 or higher
 3. Networkx 2.4 or higher
