@@ -28,3 +28,7 @@ The input data required for the model comes in the form of graphs, which consist
 ## Prediction
 
 Once one finished generating the input data, the prediction can be produced by 
+
+## Training
+
+# Dataset
