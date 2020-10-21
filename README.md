@@ -10,17 +10,12 @@ This README file is written by Limeng Pu.
 
 # Dependencies
 
-1. Non-deep-learning related dependencies can be installed via `conda env create -f environment.yml`
+1. Non-deep-learning (data generation) related dependencies can be installed via `conda env create -f environment.yml`. Please change line 12 accordingly.
 2. Pytorch 1.6.0
 3. PyTorch Geometric latest version (https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html)
 4. CUDA if you'd like to run on GPU(s)
-5. Pandas 1.0 or higher
-6. Networkx 2.4 or higher
-7. JSON
-8. h5py
-9. Scipy
 
-For the installation instruction please refer to the corresponding project site.
+The installation of Pytorch and Pytorch Geometric differs from system to system. Thus, for the installation instruction related to those libraries, please refer to the corresponding project site.
 
 # Usage
 
