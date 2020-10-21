@@ -1,7 +1,7 @@
 {
-	"path": "/home/limeng/Desktop/GraphGR/ski_data/gogo_hierarchical_30/data/",
-	"lpath": "/home/limeng/Desktop/GraphGR/ski_data/grouped_cellline.csv",
-	"opath": "./results/",
+	"path": "path_to_your_training_data",
+	"lpath": "path_to_your_label_file",
+	"opath": "path_to_your_output_folder",
 	"batch_size": 32,
 	"gnn_layers": 4,
 	"embed_dim": 5,
