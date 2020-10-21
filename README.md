@@ -27,8 +27,7 @@ The input data required for the model comes in the form of graphs, which consist
 ## Prediction
 
 Once one finishes generating the desirable data, the prediction module can be carried out by running 
-
-`python gr_pred.py --m ./trained_model/graphgr_weights.ckpt --c ./trained_mode/configs.json --i your_data_folder --o your_output_file`.
+<pre><code>python gr_pred.py --m ./trained_model/graphgr_weights.ckpt --c ./trained_mode/configs.json --i your_data_folder --o your_output_file.</code></pre>
 
 ## Training
 
