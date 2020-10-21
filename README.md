@@ -28,12 +28,18 @@ The input data required for the model comes in the form of graphs, which consist
 
 Once one finishes generating the desirable data, the prediction module can be carried out by running 
 <pre><code>python gr_pred.py --m ./trained_model/graphgr_weights.ckpt --c ./trained_mode/configs.json --i your_data_folder --o your_output_file.</code></pre>
-  - `--f` input pdb file path.
-  - `--a` input auxilary file path, with binding residue numbers and center of ligand (optional). An example of the auxilary file is provided in `example_aux.txt`.
-  - `--r` the radius of the spherical grid.
-  - `--n` the number of points along the dimension of the spherical grid.
-  - `--o` output folder path.
-  - `--p` or `--s` whether to calculate the potential nor not. If not, only the binary occupied grid will be returne, i.e., the shape of the grid only. Default, yes (`--p`).
+  - `--m` trained model weight file location.
+  - `--c` trained model configuration file location.
+  - `--i` input data folder location.
+  - `--o` output file location.
+  
+A output will be produced in the form of 
+<pre><code>
+instance,drug,cellline,score,class
+pazopanib_1321N1,pazopanib,1321N1,0.75794625,1
+motesanib_1321N1,motesanib,1321N1,0.5741133,1
+lestaurtinib_1321N1,lestaurtinib,1321N1,0.7808407,1
+</code></pre>
 
 ## Training
 
