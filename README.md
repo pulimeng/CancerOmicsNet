@@ -11,11 +11,14 @@ This README file is written by Limeng Pu.
 # Prerequisites
 
 1. Python 3.7.*
-2. Pytorch 1.4.0 or higher
+2. Pytorch 1.6.0
 3. PyTorch Geometric latest version (https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html)
-4. Pandas 1.0 or higher
-5. Networkx 2.4 or higher
-6. CUDA if you'd like to run on GPU(s)
+4. CUDA if you'd like to run on GPU(s)
+5. Pandas 1.0 or higher
+6. Networkx 2.4 or higher
+7. JSON
+8. h5py
+9. Scipy
 
 For the installation instruction please refer to the corresponding project site.
 
