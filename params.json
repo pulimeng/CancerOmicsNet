@@ -1,0 +1,19 @@
+{
+	"path": "/home/limeng/Desktop/GraphGR/ski_data/gogo_hierarchical_30/data/",
+	"lpath": "/home/limeng/Desktop/GraphGR/ski_data/grouped_cellline.csv",
+	"opath": "./results/",
+	"batch_size": 32,
+	"gnn_layers": 4,
+	"embed_dim": 5,
+	"hidden_dim": 16,
+	"jk_layer": "max",
+	"process_step": 3,
+	"num_classes": 2,
+	"lr": 1e-3,
+	"weight_decay": 1e-4,
+	"dropout":0.0,
+	"class_weight": null,
+	"gamma": 0.5,
+	"num_epochs": 100,
+	"manual_seed": 12345
+}
