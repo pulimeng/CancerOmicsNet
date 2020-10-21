@@ -19,11 +19,15 @@ The installation of Pytorch and Pytorch Geometric differs from system to system.
 
 # Usage
 
-This repo provides data processing, prediction, and training modules if you'd like to train on your own dataset. 
+The data generation and prediction/training are separated in this repo.
 
-# Data Preprocessing
+# Data Generation
 
-The input data required for the model comes in the form of graphs, which consists of a list of nodes and a list of edges (edge features are not supported in the currently implementation), which is provided in this repo based on the STRING databse (https://string-db.org/). The processing steps include: graph generation with node feaures, graph reduction, and graph to matrix conversion. The detailed information can be found in `./preprocessing`.
+The input data required for the model comes in the form of graphs, which consists of a list of nodes and a list of edges (edge features are not supported in the currently implementation), which is provided in this repo based on the STRING databse (https://string-db.org/). The generation steps include: graph generation with node feaures, graph reduction, and graph to matrix conversion. **Since the entire data generation process, especially the collection of node features (affinities, disease scores, and gene expressions), is quite cumbersome. Thus, for the convenient of the users, we provide all the features we collected. The user only need to input the drug-cellline combinations they wish to generate graphs for. Note the following procedure is ONLY for generating testing data. If you wish to generate your own training data, you will need to collect GR values for them, which is not provided here, and follow the same method described below.**
+
+
+
+The detailed information can be found in `./preprocessing`.
 
 1. Graph generation: 
 
