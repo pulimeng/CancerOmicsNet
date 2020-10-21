@@ -35,7 +35,6 @@ Once one finishes generating the desirable data, the prediction module can be ca
   
 A output will be produced in the form of 
 
-
     |   instance   |   drug   |   cellline   |   score   |   class   |
     |:---:|:---:|:---:|:---:|:---:|
     | pazopanib_1321N1 | pazopanib | 1321N1 | 0.75794625 | 1 |
