@@ -1,6 +1,6 @@
 # Data Generation for GraphGR
 
-The details of the data generation for GraphGR is presented as follows. **Note the following procedure is ONLY for generating testing data. If you wish to generate your own training data, you will need to collect GR values for them, which is not provided here, and follow the same method described below.**
+The data generation for GraphGR is presented as follows. **Note the following procedure is ONLY for generating testing data. If you wish to generate your own training data, you will need to collect GR values for them, which is not provided here, and follow the same method described below.**
     
 
 # Prerequisites
