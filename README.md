@@ -33,7 +33,7 @@ Once one finishes generating the desirable data, the prediction module can be ca
   - `--i` input data folder location.
   - `--o` output file location.
   
-A output will be produced in the form of 
+A output will be produced in the form of:
 
     |   instance   |   drug   |   cellline   |   score   |   class   |
     |:---:|:---:|:---:|:---:|:---:|
