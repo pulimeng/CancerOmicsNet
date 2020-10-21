@@ -8,9 +8,9 @@ Singha M, Pu L, Shawky M, Busch K, Wu H-C, Ramanujam J, Brylinski M (2020) Graph
 
 This README file is written by Limeng Pu.
 
-# Prerequisites
+# Dependencies
 
-1. Python 3.7.*
+1. Non-deep-learning related dependencies can be installed via `conda env create -f environment.yml`
 2. Pytorch 1.6.0
 3. PyTorch Geometric latest version (https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html)
 4. CUDA if you'd like to run on GPU(s)
