@@ -1,4 +1,4 @@
-# Data Preprocessing for GraphGR (Graph Reduction)
+# Data Generation for GraphGR (Graph Reduction)
 
 The details of the data preprocessing for GraphGR is presented as follows.
 
