@@ -1,0 +1,12 @@
+name: grapthgr
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7
+  - pandas
+  - networkx
+  - scipy
+  - json
+  - h5py
+prefix: /work/pulimeng/envs/
