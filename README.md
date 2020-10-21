@@ -45,4 +45,8 @@ where the score will represent the effectiveness of such drug on the provided ce
 
 ## Training
 
+To train the model using your own data, run 
+<pre><code>python gr_train.py</code></pre>
+It reads the configurations from the `params.json`.
+
 # Dataset
