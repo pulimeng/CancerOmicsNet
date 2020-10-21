@@ -1,6 +1,6 @@
-# Data Generation for GraphGR (Graph Reduction)
+# Data Generation for GraphGR
 
-The details of the data preprocessing for GraphGR is presented as follows.
+The details of the data generation for GraphGR is presented as follows. **Note the following procedure is ONLY for generating testing data. If you wish to generate your own training data, you will need to collect GR values for them, which is not provided here.**
 
 1. Graph generation
 
