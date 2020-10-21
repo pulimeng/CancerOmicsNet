@@ -2,6 +2,8 @@
 
 The details of the data generation for GraphGR is presented as follows. **Note the following procedure is ONLY for generating testing data. If you wish to generate your own training data, you will need to collect GR values for them, which is not provided here.**
 
+# Method
+
 1. Graph generation
 
     The network is represented as a node table and an edge table. The node table takes the following format:
