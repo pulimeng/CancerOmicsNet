@@ -34,12 +34,12 @@ Once one finishes generating the desirable data, the prediction module can be ca
   - `--o` output file location.
   
 A output will be produced in the form of 
-<code>
+<pre><code>
 instance,drug,cellline,score,class
 pazopanib_1321N1,pazopanib,1321N1,0.75794625,1
 motesanib_1321N1,motesanib,1321N1,0.5741133,1
 lestaurtinib_1321N1,lestaurtinib,1321N1,0.7808407,1
-</code>
+</code>(/pre)
 
 ## Training
 
