@@ -34,6 +34,15 @@ Once one finishes generating the desirable data, the prediction module can be ca
   - `--o` output file location.
   
 A output will be produced in the form of 
+
+
+    |   node_id   |   feature_1   |   feature_2   |   ...   |   feature_m   |
+    |:---:|:---:|:---:|:---:|:---:|
+    | ENSEMBLID_1 | x1_1 | x1_2 | ... | x1_m |
+    | ENSEMBLID_2 | x2_1 | x2_2 | ... | x2_m |
+    | ... | ... | ... | ... | ... | ... |
+    | ENSEMBLID_n | xn_1 | xn_2 | ... | xn_m |
+
 <pre><code>
 instance,drug,cellline,score,class
 pazopanib_1321N1,pazopanib,1321N1,0.75794625,1
