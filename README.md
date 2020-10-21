@@ -28,6 +28,12 @@ The input data required for the model comes in the form of graphs, which consist
 
 Once one finishes generating the desirable data, the prediction module can be carried out by running 
 <pre><code>python gr_pred.py --m ./trained_model/graphgr_weights.ckpt --c ./trained_mode/configs.json --i your_data_folder --o your_output_file.</code></pre>
+  - `--f` input pdb file path.
+  - `--a` input auxilary file path, with binding residue numbers and center of ligand (optional). An example of the auxilary file is provided in `example_aux.txt`.
+  - `--r` the radius of the spherical grid.
+  - `--n` the number of points along the dimension of the spherical grid.
+  - `--o` output folder path.
+  - `--p` or `--s` whether to calculate the potential nor not. If not, only the binary occupied grid will be returne, i.e., the shape of the grid only. Default, yes (`--p`).
 
 ## Training
 
