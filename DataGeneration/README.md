@@ -8,7 +8,8 @@ The data generation module for GraphGR. The entire data generation process, espe
 1. Python 3.7.*
 2. Pandas 1.0 or higher
 3. Networkx 2.4 or higher
-4. h5py
+4 scipy
+5 h5py
 
 # Usage
 
