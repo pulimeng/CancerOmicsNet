@@ -36,19 +36,12 @@ Once one finishes generating the desirable data, the prediction module can be ca
 A output will be produced in the form of 
 
 
-    |   node_id   |   feature_1   |   feature_2   |   ...   |   feature_m   |
+    |   instance   |   drug   |   cellline   |   score   |   class   |
     |:---:|:---:|:---:|:---:|:---:|
-    | ENSEMBLID_1 | x1_1 | x1_2 | ... | x1_m |
-    | ENSEMBLID_2 | x2_1 | x2_2 | ... | x2_m |
-    | ... | ... | ... | ... | ... | ... |
-    | ENSEMBLID_n | xn_1 | xn_2 | ... | xn_m |
+    | pazopanib_1321N1 | pazopanib | 1321N1 | 0.75794625 | 1 |
+    | motesanib_1321N1 | motesanib | 1321N1 | 0.5741133 | 1 |
+    | lestaurtinib_1321N1 | lestaurtinib | 1321N1 | 0.7808407 | 1 |
 
-<pre><code>
-instance,drug,cellline,score,class
-pazopanib_1321N1,pazopanib,1321N1,0.75794625,1
-motesanib_1321N1,motesanib,1321N1,0.5741133,1
-lestaurtinib_1321N1,lestaurtinib,1321N1,0.7808407,1
-</code></pre>
 where the score will represent the effectiveness of such drug on the provided cell line.
 
 ## Training
