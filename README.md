@@ -55,5 +55,7 @@ It reads the configurations from the `params.json`.
  - `jk_layer` JumpingKnowledge layer parameter, can be 'cat', 'max', or any numbers.
  - `process_step` number of processing step for Set2Set readout layer.
  - `gamma` gamma for focal loss
- 
+
+All the results will be saved to the output folder, including loss, accuracies and best model weights.
+
 # Dataset
