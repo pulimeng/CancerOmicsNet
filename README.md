@@ -45,8 +45,10 @@ where the score will represent the effectiveness of such drug on the provided ce
 
 ## Training
 
-To train the model using your own data, run 
+Before you train your own model, create two folders (`raw` and `processed`) under your data folder. Then move the data to `./raw`. To train the model using your own data, run 
 <pre><code>python gr_train.py</code></pre>
-It reads the configurations from the `params.json`. The parameters need can be found in an example file we provided.
+It reads the configurations from the `params.json`.
+ - `path` path to the training data folder.
+ - `opath` path to the output folder
 
 # Dataset
