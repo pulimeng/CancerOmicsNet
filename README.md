@@ -28,7 +28,7 @@ The input data required for the model comes in the form of graphs (eventually co
 
 For the convenient of most users, we provide all the features we collected. The user only need to input the drug-cell-line combinations they wish to generate graphs for. To generate data for desired drug and cell-line, one first need to download the already reduced graph from https://osf.io/enz69/. They are named, `reduced_node_tables` and `reduced_edge_tables`. Then run
 <pre><code>python gr_datagen.py --i example_input --o output_folder</code></pre>
- - `--i` the file contains drug-cell-line pair you wish to generate data for. **Note that available drugs and cell-lines are also provided as drugs.lst and celllines.lst respectively.**
+ - `--i` the file contains drug-cell-line pair you wish to generate data for, separated by commas. An example file in given as `example_input`. **Note that available drugs and cell-lines are also provided as drugs.lst and celllines.lst respectively.**
  - `--o` the folder you wish to store the generated data (.h5 files contain the matrices).
 
 ## Prediction
