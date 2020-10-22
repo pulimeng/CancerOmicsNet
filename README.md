@@ -67,3 +67,4 @@ All the results will be saved to the output folder, including loss, accuracies a
 # Dataset
 
 The dataset we used for training and other auxilary files for data generation (`reduced_node_tables` and `reduced_edge_tables`) can be downloaded at https://osf.io/enz69/.
+.
