@@ -1,6 +1,5 @@
 {
 	"path": "path_to_your_training_data",
-	"lpath": "path_to_your_label_file",
 	"opath": "path_to_your_output_folder",
 	"batch_size": 32,
 	"gnn_layers": 4,
