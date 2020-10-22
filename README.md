@@ -49,6 +49,11 @@ Before you train your own model, create two folders (`raw` and `processed`) unde
 <pre><code>python gr_train.py</code></pre>
 It reads the configurations from the `params.json`.
  - `path` path to the training data folder.
- - `opath` path to the output folder
-
+ - `opath` path to the output folder.
+ - `embed_dim` embedding dimension for the embedding of gene expressions and node types. **Not the embedding dimension of GNN.**
+ - `hidden_dim` GNN hidden dimension.
+ - `jk_layer` JumpingKnowledge layer parameter, can be 'cat', 'max', or any numbers.
+ - `process_step` number of processing step for Set2Set readout layer.
+ - `gamma` gamma for focal loss
+ 
 # Dataset
