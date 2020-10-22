@@ -26,7 +26,7 @@ The input data required for the model comes in the form of graphs (eventually co
 
 **Since the entire data generation process, especially the collection of node features (affinities, disease scores, and gene expressions), is quite cumbersome, thus the following procedure is ONLY for generating testing data (no labels!!). If you wish to generate your own training data (with class labels), you will need to collect GR values for them and follow the instruction @other repo.**
 
-For the convenient of most users, we provide all the features we collected. The user only need to input the drug-cell-line combinations they wish to generate graphs for. To generate data for desired drug and cell-line, one first need to download the already reduced graph from https://osf.io/enz69/. They are named, `reduced_node_tables` and `reduced_edge_tables`. Then run
+For the convenient of most users, we provide all the features we collected. The user only need to input the drug-cell-line combinations they wish to generate graphs for. To generate data for desired drug and cell-line, one first need to download and untar the already reduced graph from https://osf.io/enz69/. They are named, `reduced_node_tables` and `reduced_edge_tables`. Then run
 <pre><code>python gr_datagen.py --i example_input --o output_folder</code></pre>
  - `--i` the file contains drug-cell-line pair you wish to generate data for, separated by commas. An example file in given as `example_input`. **Note that available drugs and cell-lines are also provided as drugs.lst and celllines.lst respectively.**
  - `--o` the folder you wish to store the generated data (.h5 files contain the matrices).
@@ -66,3 +66,5 @@ It reads the configurations from the `params.json`.
 All the results will be saved to the output folder, including loss, accuracies and best model weights.
 
 # Dataset
+
+The dataset we used for training and other auxilary files for data generation (`reduced_node_tables` and `reduced_edge_tables`) can be downloaded at https://osf.io/enz69/.
