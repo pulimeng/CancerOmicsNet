@@ -1,4 +1,4 @@
-name: grapthgr
+name: graphgr
 channels:
   - conda-forge
   - defaults
