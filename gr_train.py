@@ -71,10 +71,7 @@ def main(opt):
     for file in os.listdir(opt['path']):
         files.append(file[:-3])
     
-    trainings, validations = train_test_split(files, test_size=0.2)
-    
-    train_ids = [x for x in trainings]
-    val_ids = [x for x in validations]
+    train_ids, val_ids = train_test_split(files, test_size=0.2)
     
     train_dataset = GRDataset(opt['path'], train_ids)
     val_dataset = GRDataset(opt['path'], val_ids)
