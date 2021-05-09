@@ -152,11 +152,11 @@ def main(opt):
         print('Validation confusion matrix:')
         print(cnf)
         
-    np.save(os.path.join(log_path,'train_loss.npy', tr_losses))
-    np.save(os.path.join(log_path,'train_acc.npy', tr_accs))
-    np.save(os.path.join(log_path,'val_loss.npy', val_losses))
-    np.save(os.path.join(log_path,'val_acc.npy', val_accs))
-    np.save(os.path.join(log_path,'confusion_matrix.npy', best_cnf))
+    np.save(os.path.join(log_path,'train_loss.npy'）, tr_losses)
+    np.save(os.path.join(log_path,'train_acc.npy'）, tr_accs)
+    np.save(os.path.join(log_path,'val_loss.npy'), val_losses)
+    np.save(os.path.join(log_path,'val_acc.npy'), val_accs)
+    np.save(os.path.join(log_path,'confusion_matrix.npy'), best_cnf)
         
 if __name__ == "__main__":
     main(opt)
