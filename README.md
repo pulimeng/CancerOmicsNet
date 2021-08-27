@@ -1,6 +1,6 @@
-# GraphGR
+# CancerOmicsNet
 
-GraphGR is a tool to predict drug (kinase inhibitors ONLY for now) response on a specific cell line given genetic information of the cell line, binding affinity of the drug to the proteins, and the disease association scores of the proteins. It utilizes heterogeneous data to construct a graph for each cell-line-drug combination (instance). The trained model can be used to predict the effect (currently a binary classification) of a drug on a given cell line.
+CancerOmicsNet is a tool to predict drug (kinase inhibitors ONLY for now) response on a specific cell line given genetic information of the cell line, binding affinity of the drug to the proteins, and the disease association scores of the proteins. It utilizes heterogeneous data to construct a graph for each cell-line-drug combination (instance). The trained model can be used to predict the effect (currently a binary classification) of a drug on a given cell line.
 
 If you find this tool useful, please cite our paper :)
 
