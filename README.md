@@ -4,7 +4,7 @@ CancerOmicsNet is a tool to predict drug (kinase inhibitors ONLY for now) respon
 
 If you find this tool useful, please cite our paper :)
 
-Singha M, Pu L, Shawky M, Busch K, Wu H-C, Ramanujam J, Brylinski M (2020) GraphGR: A graph neural network to predict the effect of pharmacotherapy on the cancer cell growth. BioRxiv. https://www.biorxiv.org/content/10.1101/2020.05.20.107458v1
+https://www.biorxiv.org/content/10.1101/2020.05.20.107458v1
 
 This README file is written by Limeng Pu.
 
