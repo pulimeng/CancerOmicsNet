@@ -1,4 +1,4 @@
-name: graphgr
+name: conet
 channels:
   - conda-forge
   - defaults
