@@ -4,7 +4,7 @@ CancerOmicsNet is a tool to predict drug (kinase inhibitors ONLY for now) respon
 
 If you find this tool useful, please cite our paper :)
 
-https://www.biorxiv.org/content/10.1101/2020.05.20.107458v1
+https://www.oncotarget.com/article/28234/text/
 
 This README file is written by Limeng Pu.
 
