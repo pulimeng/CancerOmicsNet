@@ -4,6 +4,8 @@ CancerOmicsNet is a tool to predict drug (kinase inhibitors ONLY for now) respon
 
 If you find this tool useful, please cite our paper :)
 
+Pu L., Singha M., Ramanujam J., Brylinski M. CancerOmicsNet: a multi-omics network-based approach to anti-cancer drug profiling. Oncotarget. 2022; 13: 695-706
+
 https://www.oncotarget.com/article/28234/text/
 
 This README file is written by Limeng Pu.
